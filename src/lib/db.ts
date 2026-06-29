@@ -9,7 +9,7 @@ export function getPool(): mysql.Pool {
       user:     process.env.DATABASE_USER || 'avnadmin',
       password: process.env.DATABASE_PASSWORD || 'AVNS_Jx5S6JQDgCXBWduL6lR',
       database: process.env.DATABASE_NAME || 'defaultdb',
-      port:     Number(process.env.DATABASE_PORT) || 12884,
+      port:     Number(process.env.DATABASE_PORT) || 18217,
       ssl: process.env.DATABASE_SSL_CA
         ? { ca: process.env.DATABASE_SSL_CA }
         : { rejectUnauthorized: false },
